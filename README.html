@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Button</title>
+    <style>
+        .secret-button {
+            display: none;
+        }
+    </style>
+    <script>
+        function revealSecretButton() {
+            document.getElementById('secretButton').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Secret Page</h1>
+    <p>Click the link below to reveal the secret button:</p>
+    <button onclick="revealSecretButton()">Reveal Secret Button</button>
+    <br><br>
+    <button id="secretButton" class="secret-button" onclick="window.location.href='https://www.example.com'">Secret Link</button>
+</body>
+</html>
+
+
