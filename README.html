@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secret Button</title>
+    <title>Hidden Link</title>
     <style>
-        .secret-button {
-            display: none;
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+        .hidden-button {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
         }
     </style>
-    <script>
-        function revealSecretButton() {
-            document.getElementById('secretButton').style.display = 'block';
-        }
-    </script>
 </head>
 <body>
-    <h1>Welcome to the Secret Page</h1>
-    <p>Click the link below to reveal the secret button:</p>
-    <button onclick="revealSecretButton()">Reveal Secret Button</button>
-    <br><br>
-    <button id="secretButton" class="secret-button" onclick="window.location.href='https://www.example.com'">Secret Link</button>
+    <button class="hidden-button" onclick="window.location.href='https://www.example.com'"></button>
 </body>
 </html>
-
-
